@@ -13,7 +13,6 @@ public class Case implements ComputerComponent {
 	public Case(double price) {
 		this.casePrice = price;
 	}
-
 	
 	HashMap<ComputerComponent, Double> componentList = new HashMap<ComputerComponent, Double>();
 
