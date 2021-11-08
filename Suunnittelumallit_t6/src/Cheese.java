@@ -1,10 +1,14 @@
 
 public class Cheese extends PizzaDecorator {
 		
-	private int price = 2;
+	private int price = 3;
 
 	public Cheese(Pizza pizza) {
 		super(pizza);
+	}
+	
+	private int getCheesePrice() {
+		return price;
 	}
 
 	@Override
@@ -12,7 +16,11 @@ public class Cheese extends PizzaDecorator {
 		return super.getPrice() + getCheesePrice() ;
 	}	
 	
-	private int getCheesePrice() {
-		return price;
+	private String getCheeseName() {
+		return "Cheese ";
+	}
+	
+	public String getMenu() {
+		return super.getMenu() + getCheeseName();	
 	}
 }

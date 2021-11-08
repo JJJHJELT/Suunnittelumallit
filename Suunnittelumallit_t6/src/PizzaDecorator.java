@@ -10,4 +10,8 @@ public abstract class PizzaDecorator implements Pizza {
 	public int getPrice() {
 		return pizza.getPrice();		
 	}
+	
+	public String getMenu() {
+		return pizza.getMenu();
+	}
 }

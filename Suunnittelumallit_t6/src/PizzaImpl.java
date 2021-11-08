@@ -5,4 +5,9 @@ public class PizzaImpl implements Pizza {
 	public int getPrice() {
 		return 0;
 	}
+
+	@Override
+	public String getMenu() {
+		return "";
+	}
 }

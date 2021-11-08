@@ -7,12 +7,20 @@ public class Crust extends PizzaDecorator {
 		super(pizza);
 	}
 
+	private int getCrustPrice() {
+		return price;
+	}
+
 	@Override
 	public int getPrice() {
 		return super.getPrice() + getCrustPrice() ;
+	}	
+	
+	private String getCrustName() {
+		return "PizzaCrust ";
 	}
 	
-	private int getCrustPrice() {
-		return price;
+	public String getMenu() {
+		return super.getMenu() + getCrustName();	
 	}
 }
