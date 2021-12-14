@@ -2,7 +2,7 @@
 public class Memento {
 
 	private int random = 0;
-	private int arvaus = 0;
+	private int guess = 0;
 	
 	public Memento(int random) {
 		this.random = random;
@@ -12,12 +12,11 @@ public class Memento {
 		return random;
 	}
 	
-	public void setArvaus(int i) {
-		this.arvaus = i;
+	public void setGuess(int i) {
+		this.guess = i;
 	}
 	
-	public int getArvaus() {
-		return arvaus;
+	public int getGuess() {
+		return guess;
 	}
-
 }
